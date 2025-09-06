@@ -1,6 +1,10 @@
 name: deploy-book
 
-on: push: branches: [ main, master ]
+on: push: branches: [ main, master ] # Only run when book or workflow files change (reduces noise) paths: - 'book/' - '.github/workflows/'
+
+Allow manual runs from the Actions tab
+
+workflow_dispatch:
 
 permissions: contents: read pages: write id-token: write
 
