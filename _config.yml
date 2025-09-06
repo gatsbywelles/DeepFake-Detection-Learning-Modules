@@ -1,0 +1,18 @@
+title: "Deepfake & Social Engineering Training"
+author: "Phantom"
+only_build_toc_files: true
+logo: images/logo.png   # optional (add later)
+
+html:
+  use_repository_button: true
+  use_issues_button: true
+
+repository:
+  url: https://github.com/gatsbywelles/DeepFake-Detection-Learning-Modules
+  branch: main
+
+# Enable page download buttons (.md/.ipynb/.pdf) like the example site
+sphinx:
+  config:
+    html_theme_options:
+      use_download_button: true
