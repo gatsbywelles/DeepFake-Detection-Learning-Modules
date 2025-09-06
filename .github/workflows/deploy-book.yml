@@ -1,62 +1,51 @@
+set -euo pipefail
+
+# 1) Recreate workflow file with clean LF endings
+rm -f .github/workflows/deploy-book.yml
+mkdir -p .github/workflows
+cat > .github/workflows/deploy-book.yml <<'YML'
 name: deploy-book
 
-
 on:
-# Manual-only to avoid notification emails
-workflow_dispatch:
-
+  workflow_dispatch:   # manual-only; no emails on push
 
 permissions:
-contents: read
-pages: write
-id-token: write
-
+  contents: read
+  pages: write
+  id-token: write
 
 concurrency:
-group: pages
-cancel-in-progress: true
-
+  group: pages
+  cancel-in-progress: true
 
 jobs:
-build:
-runs-on: ubuntu-latest
-steps:
-- uses: actions/checkout@v4
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install jupyter-book
+      - run: jb build book/
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: book/_build/html
 
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
+YML
 
-- uses: actions/setup-python@v5
-with:
-python-version: '3.11'
-
-
-- name: Install deps
-run: pip install -r requirements.txt
-
-
-- name: Build Jupyter Book
-run: jb build book/
-
-
-- name: Configure Pages
-uses: actions/configure-pages@v5
-
-
-- name: Upload artifact
-uses: actions/upload-pages-artifact@v3
-with:
-path: book/_build/html
-
-
-deploy:
-needs: build
-permissions:
-pages: write
-id-token: write
-environment:
-name: github-pages
-url: ${{ steps.deployment.outputs.page_url }}
-runs-on: ubuntu-latest
-steps:
-- name: Deploy to GitHub Pages
-id: deployment
-uses: actions/deploy-pages@v4
+# 2) Commit & push
+git add .github/workflows/deploy-book.yml
+git commit -m "fix: clean manual Pages workflow (LF endings)"
+git push
