@@ -1,25 +1,27 @@
-Core metadata
+Site
 
-title: "Cybersecurity Program" author: "Your Org" copyright: "2025" logo: _static/logo.png # optional
+title: "Cybersecurity Program" author: "Phantom" logo: _static/logo.png # optional
 
-Execution
+Execute notebooks on build (use 'off' if you prefer)
 
-authorization:
-
-placeholder for future use
-
-execute: execute_notebooks: auto # auto | force | cache | off timeout: 60
+execute: execute_notebooks: auto timeout: 60
 
 MyST & HTML behavior
 
-parse: myst_enable_extensions: - colon_fence - deflist - tasklist - attrs_block - attrs_inline - html_admonition myst_url_schemes: ["http", "https"]
+parse: myst_enable_extensions: - colon_fence - deflist - tasklist - html_admonition
 
-HTML UI / repo integration
+GitHub integration buttons
 
 html: use_repository_button: true use_issues_button: true use_edit_page_button: true
 
+Launch buttons (like your example)
+
 launch_buttons: colab_url: "https://colab.research.google.com" notebook_interface: classic
 
-repository: url: https://github.com/<YOUR_USER>/<YOUR_REPO> path_to_book: book branch: main
+Make the top-right download menu appear
 
 sphinx: config: html_theme_options: use_download_button: true
+
+Point to your repo so links work
+
+repository: url: https://github.com/YOUR_USER/YOUR_REPO # ← update me path_to_book: book branch: main
