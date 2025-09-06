@@ -1,5 +1,5 @@
 format: jb-book
-root: intro
+root: overview
 chapters:
   - file: policies
   - file: readiness
