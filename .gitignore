@@ -1,0 +1,11 @@
+Jupyter Book build artifacts
+
+book/_build/
+
+Python
+
+.venv/ pycache/ .ipynb_checkpoints/
+
+OS
+
+.DS_Store Thumbs.db
