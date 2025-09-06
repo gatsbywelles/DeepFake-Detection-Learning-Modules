@@ -1,31 +1,26 @@
-Site
+title: "Cybersecurity Program"
+author: "Your Org"
+logo: _static/logo.png
 
-title: "Cybersecurity Program" author: "Phantom" logo: _static/logo.png # optional
+execute:
+  execute_notebooks: auto
+  timeout: 60
 
-Execute notebooks on build (use 'off' if you prefer)
+html:
+  use_repository_button: true
+  use_issues_button: true
+  use_edit_page_button: true
 
-execute: execute_notebooks: auto timeout: 60
-
-MyST & HTML behavior
-
-parse: myst_enable_extensions: - colon_fence - deflist - tasklist - html_admonition
-
-GitHub integration buttons
-
-html: use_repository_button: true use_issues_button: true use_edit_page_button: true
-
-Launch buttons (like your example)
-
-launch_buttons: colab_url: "https://colab.research.google.com" notebook_interface: classic
-
-Make the top-right download menu appear
-
-sphinx: config: html_theme_options: use_download_button: true
-
-Point to your repo so links work
+launch_buttons:
+  colab_url: "https://colab.research.google.com"
+  notebook_interface: classic
 
 repository:
-  url: https://github.com/gatsbywelles/DeepFake-Detection-Learning-Modules  # <— repo root
+  url: https://github.com/gatsbywelles/DeepFake-Detection-Learning-Modules
   path_to_book: book
   branch: main
 
+sphinx:
+  config:
+    html_theme_options:
+      use_download_button: true
