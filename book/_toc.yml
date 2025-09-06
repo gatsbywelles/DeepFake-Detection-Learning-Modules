@@ -1,0 +1,13 @@
+format: jb-book
+root: overview
+chapters:
+  - file: overview-module
+  - file: policies
+  - file: readiness
+  - file: education
+  - file: detection
+  - file: response
+  - file: improvements
+  - file: knowledge-check
+  - file: resources
+  - file: interactive-games
