@@ -24,4 +24,4 @@ sphinx: config: html_theme_options: use_download_button: true
 
 Point to your repo so links work
 
-repository: url: https://github.com/gatsbywelles/DeepFake-Detection-Learning-Modules # ← update me path_to_book: book branch: main
+repository: url: https://github.com/gatsbywelles/DeepFake-Detection-Learning-Modules/tree/main/book # ← update me path_to_book: book branch: main
