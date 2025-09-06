@@ -1,0 +1,25 @@
+Core metadata
+
+title: "Cybersecurity Program" author: "Your Org" copyright: "2025" logo: _static/logo.png # optional
+
+Execution
+
+authorization:
+
+placeholder for future use
+
+execute: execute_notebooks: auto # auto | force | cache | off timeout: 60
+
+MyST & HTML behavior
+
+parse: myst_enable_extensions: - colon_fence - deflist - tasklist - attrs_block - attrs_inline - html_admonition myst_url_schemes: ["http", "https"]
+
+HTML UI / repo integration
+
+html: use_repository_button: true use_issues_button: true use_edit_page_button: true
+
+launch_buttons: colab_url: "https://colab.research.google.com" notebook_interface: classic
+
+repository: url: https://github.com/<YOUR_USER>/<YOUR_REPO> path_to_book: book branch: main
+
+sphinx: config: html_theme_options: use_download_button: true
