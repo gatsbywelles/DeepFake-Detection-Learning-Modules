@@ -1,7 +1,6 @@
 format: jb-book
 root: overview
 chapters:
-  - file: overview-module
   - file: policies
   - file: readiness
   - file: education
