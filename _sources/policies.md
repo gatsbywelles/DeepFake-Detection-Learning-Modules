@@ -56,7 +56,7 @@ An AI-manipulated audio clip in which a school principal was heard making deroga
 
 One version of the clip accumulated almost two million views within hours of it being published, the BBC reported. Investigators traced the email that was used to send the AI-manipulated clip to three teachers back to 31-year-old Dazhon Darien, the school’s athletics director, who had been under investigation by Principal Eiswert over an alleged theft of almost USD $2000 from the school.
 
-![Voice Clone](_static/voice.png)
+![Voice Clone](_static/clone.jpg)
 In May 2024, fraudsters attempted to scam WPP, the world’s largest advertising firm, by impersonating its CEO, Mark Read, using a deepfake voice clone.  
 
 The attackers set up a fake WhatsApp account with Read’s image and organized a Microsoft Teams meeting, during which they used AI-generated audio and video footage to mimic Read and another executive. They tried to deceive an agency leader into setting up a new business and soliciting funds and personal details. Fortunately, vigilant employees thwarted the scam before any damage was done.
