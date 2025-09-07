@@ -1,11 +1,4 @@
-Policies
+# Policies
 
-Governance
-
-Acceptable Use
-
-Data Classification
-
-Access Control
-
-Vendor/Supply Chain
+## What is Deepfake? 
+The term “deepfake” merges “deep learning” and “fake,” describing the process of synthesizing, altering, and manipulating existing video and audio content using artificial intelligence (AI) technologies to simulate real events (Busacca & Monaca, 2023). Through deepfake techniques, individuals can overlay or substitute one person’s face onto another’s in visual media. These methods rely on neural networks trained on extensive datasets to replicate facial movements, vocal patterns, and speech nuances. Typically, the algorithm is fed footage of two individuals, enabling it to learn how to interchange their faces. Put simply, deepfake technology leverages deep learning and AI to analyze facial dynamics and apply image mapping to replace one face with another, resulting in a convincingly fabricated video (Chadha et al., 2021).

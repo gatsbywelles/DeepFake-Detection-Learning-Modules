@@ -7,7 +7,7 @@ if [[ "$branch" != "main" ]]; then
   echo "❌ publish.sh: run from 'main' (current: $branch)"; exit 1;
 fi
 
-# deps (quiet, no pip nags)
+# deps
 if [[ -f requirements.txt ]]; then
   python3 -m pip install --disable-pip-version-check -q -r requirements.txt
 else
@@ -18,20 +18,34 @@ fi
 jb clean --all book || true
 jb build book/
 
-# prepare gh-pages branch (create if missing) via worktree
-git show-ref --verify --quiet refs/heads/gh-pages || git branch gh-pages
-rm -rf .gh-pages-work || true
-git worktree add .gh-pages-work gh-pages
+# ensure gh-pages exists and is up-to-date (create if missing)
+git fetch origin --prune
+git show-ref --verify --quiet refs/remotes/origin/gh-pages || {
+  # first-time init
+  tmpdir="$(mktemp -d)"
+  git worktree add "$tmpdir" main
+  ( cd "$tmpdir" && rm -rf ./* && printf "init\n" > .init && git add -A && git commit -m "init gh-pages" )
+  ( cd "$tmpdir" && git branch -M gh-pages && git push -u origin gh-pages )
+  git worktree remove "$tmpdir" --force
+}
 
-# publish built HTML
-rsync -a --delete book/_build/html/ .gh-pages-work/
+# use a worktree checked out at origin/gh-pages tip
+rm -rf .gh-pages-work || true
+git worktree add -B gh-pages .gh-pages-work origin/gh-pages
+
+# publish built HTML (keep .git intact!)
+rsync -a --delete \
+  --exclude '.git' \
+  --exclude '.gitignore' \
+  book/_build/html/ .gh-pages-work/
 touch .gh-pages-work/.nojekyll
 
-pushd .gh-pages-work >/dev/null
-git add -A
-git commit -m "publish(site): $(date -u +'%Y-%m-%dT%H:%M:%SZ')" || true
-git push -u origin gh-pages
-popd >/dev/null
+# commit & push site
+git -C .gh-pages-work add -A
+git -C .gh-pages-work commit -m "publish(site): $(date -u +'%Y-%m-%dT%H:%M:%SZ')" || true
+git -C .gh-pages-work push -u origin gh-pages
 
-git worktree remove .gh-pages-work --force
+# cleanup worktree (fallback to rm if .git was removed for any reason)
+git worktree remove .gh-pages-work --force 2>/dev/null || rm -rf .gh-pages-work
+
 echo "✅ Published to gh-pages."
