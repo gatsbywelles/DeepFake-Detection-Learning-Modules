@@ -43,3 +43,10 @@ The impact of deepfakes extends beyond personal harm and poses serious risks to 
 |Distribution of manipulated political or social media content | Consent from depicted persons mandatory. | If personal information is involved, APP 11 (security of personal info) applies. | Raises ethical concerns around misinformation, democracy, and trust (Chesney & Citron, 2019). | Escalate to Legal and report to eSafety Commissioner if harmful/disinformation. |
 |Corporate training scenario: AI-generated audio of a manager giving safety instructions |Consent required from the manager before generating audio likeness. Synthetic media must be disclosed to staff. |Voice recordings are considered personal information; must be securely stored per APP 11. | Misrepresentation may confuse staff if not labeled as synthetic. | Escalate to HR/Training if unconsented use is found; re-issue corrected material. |
 |University lecture recording altered with AI to mimic a professor’s voice | Written consent from the lecturer required before AI editing or replication. | Altering or sharing lecture audio without consent may breach the Privacy Act and copyright. | Ethical risk: undermines academic integrity and authenticity of teaching. |Report to Faculty Head + IT Security. May trigger academic misconduct proceedings. |
+
+## Example Case Studies 
+![Arup Scam](_static/arup.jpg)
+
+An employee at British multinational Arup was duped into sending $39 million to fraudsters after the company's CEO and other staff members were impersonated in a video call. 
+
+The professional in question was initially contacted by Arup's UK office with an email stressing the need for a secret transaction. The individual suspected it to be a phishing email, but their doubts were removed after the video call because of the extremely realistic impersonations. 
