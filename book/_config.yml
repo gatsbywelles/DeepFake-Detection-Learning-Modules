@@ -1,6 +1,6 @@
 title: "DeepFake Detection Learning Modules"
 author: "Phantom"
-logo: _static/logo.png
+logo: _static/wsu_logo.png
 
 execute:
   execute_notebooks: auto
