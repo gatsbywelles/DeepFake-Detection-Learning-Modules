@@ -36,4 +36,17 @@ The impact of deepfakes extends beyond personal harm and poses serious risks to 
 ## Legal and Ethical Guidelines 
 | Scenario | Consent in AI Media | Data Protection & Privacy | Ethical Consideration | Escalation & Enforcements |
 | -------- | ------------------- | ------------------------- | ----------------------|---------------------------|
+<!-- This is row 1. -->
 |Using a staff member’s face in a training deepfake video | Must obtain explicit written consent (release form or signed agreement). No implied consent is valid. | Must comply with the Privacy Act 1988 (Cth) and Australian Privacy Principles (APPs) on handling personal information. | Respect autonomy and dignity; avoid misuse of identity (aligns with eSafety’s Safety by Design principles). | Report unconsented use to HR and Privacy Officer. Breach may result in disciplinary action under organizational policy. |
+<!-- This is row 2. -->
+|Sharing AI-generated media on social platform | Must disclose that content is synthetic or altered. Consent needed if a person’s likeness is used. | Content must not expose personal information without authorization. | Transparency is required; manipulated media should be clearly labeled |Escalate to Comms/Legal before external posting. Misuse can result in reputational and legal consequences. |
+<!-- This is row 3. -->
+|AI-simulated CEO voice used in a phishing scenario | Prohibited unless simulated under controlled training with consent of the person represented. | Audio samples fall under “personal information” under Privacy Act (APP 3 – collection). | Misuse undermines trust and can constitute fraud. | Report immediately to Security Operations. Treated as a cyber incident under Notifiable Data Breach Scheme. |
+<!-- This is row 4. -->
+|Student-generated deepfake for an assignment without disclosure | Must have consent from any depicted individual. | Use of peer likeness without consent breaches Privacy Act. | Academic integrity requires transparency—unlabeled AI use = misconduct. | Report to Academic Integrity Office. Can lead to disciplinary hearings |
+<!-- This is row 5. -->
+|Distribution of manipulated political or social media content | Consent from depicted persons mandatory. | If personal information is involved, APP 11 (security of personal info) applies. | Raises ethical concerns around misinformation, democracy, and trust (Chesney & Citron, 2019). | Escalate to Legal and report to eSafety Commissioner if harmful/disinformation. |
+<!-- This is row 6. -->
+|Corporate training scenario: AI-generated audio of a manager giving safety instructions |Consent required from the manager before generating audio likeness. Synthetic media must be disclosed to staff. |Voice recordings are considered personal information; must be securely stored per APP 11. | Misrepresentation may confuse staff if not labeled as synthetic. | Escalate to HR/Training if unconsented use is found; re-issue corrected material. |
+<!-- This is row 7. -->
+|University lecture recording altered with AI to mimic a professor’s voice | Written consent from the lecturer required before AI editing or replication. | Altering or sharing lecture audio without consent may breach the Privacy Act and copyright. | Ethical risk: undermines academic integrity and authenticity of teaching. |Report to Faculty Head + IT Security. May trigger academic misconduct proceedings. |
