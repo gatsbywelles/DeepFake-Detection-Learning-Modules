@@ -1,7 +1,9 @@
-# Policies
+# Module 1: Policies
 
 ## What is Deepfake? 
-The term “deepfake” merges “deep learning” and “fake,” describing the process of synthesizing, altering, and manipulating existing video and audio content using artificial intelligence (AI) technologies to simulate real events (Busacca & Monaca, 2023). Through deepfake techniques, individuals can overlay or substitute one person’s face onto another’s in visual media. These methods rely on neural networks trained on extensive datasets to replicate facial movements, vocal patterns, and speech nuances. Typically, the algorithm is fed footage of two individuals, enabling it to learn how to interchange their faces. Put simply, deepfake technology leverages deep learning and AI to analyze facial dynamics and apply image mapping to replace one face with another, resulting in a convincingly fabricated video (Chadha et al., 2021).
+The term “deepfake” blends the ideas of deep learning and fabricated media. It refers to the use of artificial intelligence to alter or generate audio and video content in a way that makes it appear genuine, even though it’s entirely constructed (Busacca & Monaca, 2023). These techniques can be used to digitally overlay one person’s face onto another’s in a video, or to replicate someone’s voice with convincing accuracy.
+
+Deepfake technology relies on neural networks trained on large volumes of data. These systems learn to imitate facial movements, speech patterns, and subtle expressions. Typically, footage of two individuals is fed into the algorithm, which then learns how to convincingly swap one face for another. Through advanced image mapping and pattern recognition, the software generates a new video that falsely portrays someone saying or doing things they never actually did (Chadha et al., 2021).
 
 ## Types of Deepfake
 
@@ -23,4 +25,15 @@ Key ethical issues include matters of consent, the erosion of truth, and the imp
 Deepfake technology has the potential to transform bullying dynamics. While traditional bullying typically involves direct physical confrontation or online harassment through messages and posts, deepfakes introduce new forms of abuse (Alexander, 2025). Research indicates that global rates of cyberbullying victimization among adolescents range from 13.99% to 57.5%, with notable increases over the past decade as digital technologies have become more accessible and advanced (Zhu et al., 2021).
 
 ### Financial Scams
-Fraudsters can exploit deepfake audio to convincingly mimic the voices of authority figures—such as CEOs or bank officials—to deceive employees or clients into transferring money or revealing sensitive data. This type of scheme manipulates the inherent trust placed in voice communications (Hery et al., 2024).
+Malicious actors can create deepfake audio messages that impersonate individuals in authority, such as CEOs or bank representatives, to trick employees or clients into transferring funds or divulging sensitive information. This type of fraud exploits the trust typically placed in voice communication (Hery et al., 2024). 
+
+### Privacy Violations
+Deepfake technology enables individuals to digitally recreate someone’s face, voice, or gestures in fabricated content that appears convincingly real. For those targeted, this can be highly distressing. Imagine discovering your image has been inserted into explicit or misleading videos without your consent. The emotional toll can be severe, affecting mental wellbeing and personal safety. One of the most harmful applications involves the creation and circulation of non-consensual adult material, often shared without the victim’s knowledge. This kind of exploitation should never be a concern for anyone (Chaturvedi et al., 2025).
+
+### Challenges for the Legal System
+The impact of deepfakes extends beyond personal harm and poses serious risks to the justice system. Digital evidence, once considered reliable, can now be manipulated with ease. Consider a situation where a video showing a suspect confessing to a crime is later revealed to be artificially generated. Or a fabricated recording is used to falsely accuse someone of wrongdoing. These scenarios raise major concerns for law enforcement and legal professionals who depend on the authenticity of audio and video evidence. As deepfake tools become more sophisticated, maintaining trust in digital records becomes increasingly difficult (Chaturvedi et al., 2025).
+
+## Legal and Ethical Guidelines 
+| Scenario | Consent in AI Media | Data Protection & Privacy | Ethical Consideration | Escalation & Enforcements |
+| -------- | ------------------- | ------------------------- | ----------------------|---------------------------|
+|Using a staff member’s face in a training deepfake video | Must obtain explicit written consent (release form or signed agreement). No implied consent is valid. | Must comply with the Privacy Act 1988 (Cth) and Australian Privacy Principles (APPs) on handling personal information. | Respect autonomy and dignity; avoid misuse of identity (aligns with eSafety’s Safety by Design principles). | Report unconsented use to HR and Privacy Officer. Breach may result in disciplinary action under organizational policy. |
