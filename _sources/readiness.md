@@ -16,8 +16,8 @@ Examine staff training, familiarity with social engineering tactics, and influen
 Being prepared for deepfake risks requires effective governance. Several studies have shown that no department can handle AI-driven hazards on its own (Evans et al., 2021). Teams from IT, legal, HR, and compliance must work together to create a thorough governance framework. These cross-functional committees ensure that risk assessment, policy creation, and incident response are all coordinated and in line with corporate goals. 
 
 ```{raw} html
+```{raw} html
 <style>
-/* responsive 16:9 container */
 .video-container{position:relative;padding-bottom:56.25%;height:0;overflow:hidden}
 .video-container iframe{position:absolute;top:0;left:0;width:100%;height:100%}
 </style>
@@ -27,7 +27,8 @@ Being prepared for deepfake risks requires effective governance. Several studies
     title="Descriptive video title"
     loading="lazy"
     frameborder="0"
-    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    allowfullscreen>
+    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen
+    referrerpolicy="strict-origin-when-cross-origin">
   </iframe>
 </div>
