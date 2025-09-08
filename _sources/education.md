@@ -2,6 +2,4 @@
 
 ## Psychological Tactics of Social Engineering
 
-<video width="640" height="360" controls>
-      <source src="https://youtu.be/3qy-ITKkNxM" type="video/mp4">
-</video>
+<iframe width="560" height="315" src="https://youtu.be/3qy-ITKkNxM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
