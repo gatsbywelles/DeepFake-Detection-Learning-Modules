@@ -356,13 +356,13 @@ document.write(`
 </section>
 <section id="how-deepfakes-are-created">
 <h2>How DeepFakes Are Created<a class="headerlink" href="#how-deepfakes-are-created" title="Link to this heading">#</a></h2>
-<p><strong>Autoencoders</strong>
+<p><strong>Autoencoders</strong> <br>
 Deepfakes first gained attention using autoencoders. This method uses one shared encoder and separate decoders to map two different faces. After training, the encoder can compress one person’s facial features and the decoder can reconstruct them on another’s face (Chadha et al., 2021). This is how early celebrity face-swap videos were made.</p>
-<p><strong>Generative Adversarial Networks (GANs)</strong>
+<p><strong>Generative Adversarial Networks (GANs)</strong> <br>
 Goodfellow et al. (2014) introduced GANs, which quickly became the gold standard for creating hyper-realistic synthetic media. The generator creates fake images while the discriminator tries to detect them. Through repeated training, the generator improves until its fakes are indistinguishable. Kietzmann et al. (2020) note that GANs now produce full-body avatars and entire fake identities.</p>
-<p><strong>Practical Pipelines</strong>
+<p><strong>Practical Pipelines</strong> <br>
 In practice, tools like DeepFaceLab automate the process. Users collect thousands of frames, align and crop them, train models (which can take hours or days), and then blend faces onto target videos (Perov et al., 2020). Wav2Lip improves lip syncing so fake mouths match speech (Kumar et al., 2020). Neural TTS can now clone voices from just a few seconds of audio.</p>
-<p><strong>Accessibility</strong>
+<p><strong>Accessibility</strong><br>
 Nguyen et al. (2022) stress that the barrier to entry is falling. With online tutorials and pre-trained models, even people with little technical skill can create convincing deepfakes. This means political disinformation, scams, and harassment can spread more easily.</p>
 <p>For example, in 2019, criminals used AI-cloned voice to trick a UK energy firm executive into transferring €220,000, believing he was speaking to his boss (Stupp, 2019). This case shows how deepfake creation has already moved from experiments into real-world fraud.</p>
 </section>
@@ -384,7 +384,11 @@ Nightingale and Farid (2022) showed that AI-generated faces were rated as more t
 <section id="training-activities">
 <h2>Training Activities<a class="headerlink" href="#training-activities" title="Link to this heading">#</a></h2>
 <ul class="simple">
-<li><p>Spot-the-Fake Exercises - MIT’s <strong><a class="reference external" href="https://detectfakes.kellogg.northwestern.edu/">“Detect Fakes”</a></strong> study found that participants improved when given feedback after trying to classify images and videos (Vaccari &amp; Chadwick, 2020). These activities don’t make people perfect detectors but they make them cautious.</p></li>
+<li><p><strong>Spot-the-Fake Exercises</strong> - MIT’s <strong><a class="reference external" href="https://detectfakes.kellogg.northwestern.edu/">“Detect Fakes”</a></strong> study found that participants improved when given feedback after trying to classify images and videos (Vaccari &amp; Chadwick, 2020). These activities don’t make people perfect detectors but they make them cautious.</p></li>
+<li><p><strong>Phishing Email Simulations</strong> - Organizations increasingly run phishing simulations. Dawkins and Jacobs (2021) developed the NIST <strong><a class="reference external" href="https://nvlpubs.nist.gov/nistpubs/TechnicalNotes/NIST.TN.2276.pdf">“Phish Scame”</a></strong> which helps rate difficulty of phishing messages. This way, companies can start with obvious fakes and gradually increase realism.</p></li>
+<li><p><strong>Prebunking Games</strong> - Roozenbeek and van der Linden (2019) created the <strong><a class="reference external" href="https://www.getbadnews.com/en">“Bad News game”</a></strong> game, where players take the role of a fake news creator. By learning the tactics, they build immunity. Harmony Square, another game, applies similar logic to political manipulation. Studies show prebunking builds durable resistance.</p></li>
+<li><p><strong>Reflection Prompts</strong> - Bada et al. (2019) argue that reflection is crucial. After exercises, employees should consider what they noticed and what they missed. Reflection cements learning better than rote training.</p></li>
+<li><p><strong>Case Example</strong> - Google and Jigsaw launched prebunking YouTube ads in 2022 across Eastern Europe to combat disinformation about refugees. Early results showed reduced susceptibility to manipulation even weeks later (Roozenbeek et al., 2022). This proves training can scale beyond classrooms.</p></li>
 </ul>
 </section>
 </section>
