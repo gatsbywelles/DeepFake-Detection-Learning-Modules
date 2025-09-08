@@ -2,8 +2,10 @@
 
 ## Psychological Tactics of Social Engineering
 
-%%HTML
-<iframe width="560" height="315" src="https://app.animaker.com/animo/3fttY0FMZt7U8Dxw/" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<video width="640" height="360" controls>
+      <source src="_static/tactics.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+</video>
 
 ## How DeepFakes Are Created
 
