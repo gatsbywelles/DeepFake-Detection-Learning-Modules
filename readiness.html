@@ -331,6 +331,8 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#risk-assessment-checklist-for-deepfake-social-engineering-threats">Risk Assessment Checklist for Deepfake &amp; Social Engineering Threats</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#governance-model">Governance Model</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tools-infrastructure-readiness">Tools &amp; Infrastructure Readiness</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#chain-of-responsibility-escalation">Chain of Responsibility &amp; Escalation</a></li>
 </ul>
             </nav>
         </div>
@@ -360,21 +362,39 @@ document.write(`
 <section id="governance-model">
 <h2>Governance Model<a class="headerlink" href="#governance-model" title="Link to this heading">#</a></h2>
 <p>Being prepared for deepfake risks requires effective governance. Several studies have shown that no department can handle AI-driven hazards on its own (Evans et al., 2021). Teams from IT, legal, HR, and compliance must work together to create a thorough governance framework. These cross-functional committees ensure that risk assessment, policy creation, and incident response are all coordinated and in line with corporate goals.</p>
-<style>
-.video-container{position:relative;padding-bottom:56.25%;height:0;overflow:hidden}
-.video-container iframe{position:absolute;top:0;left:0;width:100%;height:100%}
-</style>
-<div class="video-container">
-  <iframe
-    src="https://youtu.be/3qy-ITKkNxM"
-    title="Descriptive video title"
-    loading="lazy"
-    frameborder="0"
-    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; web-share"
-    allowfullscreen
-    referrerpolicy="strict-origin-when-cross-origin">
-  </iframe>
-</div></section>
+<p><img alt="Governance Framework" src="_images/governance.png" /></p>
+<p>Key governance recommendations include:</p>
+<ul class="simple">
+<li><p>Human Resource - duties include developing and implementing targeted training programs, conducting role-playing exercises, and fostering a security-aware culture in addition to following policies. They also supervise internal reports and help employees who could be the victims of deepfake social engineering.</p></li>
+<li><p>IT/Cybersecurity - take note of how detection technologies are implemented and maintained, especially how often artificial intelligence models are retrained and calibrated. Additionally, they oversee the technical assessment of occurrences.</p></li>
+<li><p>Legal - in addition to responsibility and compliance, the legal team must remain current on the intricate and dynamic worldwide regulatory landscape.</p></li>
+<li><p>Compliance - ensures that all preparation programs, such as technological controls and staff training, adhere to evolving internal and legal requirements.</p></li>
+</ul>
+<p><strong>Decision-making authority:</strong> Clearly state which team has primary decision-making power in each threat scenario, as well as the escalation and reaction criteria.</p>
+<p><strong>Policy formulation and evaluation:</strong> In view of evolving AI threat intelligence, new technological advancements, and lessons learnt from previous instances, governance committees must regularly update policies.</p>
+<p><strong>Reporting and documentation:</strong> Maintain detailed records of all decision-making processes and incident reactions to guarantee accountability and continuous improvement (JournalsDG, 2025).</p>
+<p>Organizations can guarantee coordinated, responsible, and legally sound reactions to deepfake threats by integrating governance into the operational and strategic layers.</p>
+</section>
+<section id="tools-infrastructure-readiness">
+<h2>Tools &amp; Infrastructure Readiness<a class="headerlink" href="#tools-infrastructure-readiness" title="Link to this heading">#</a></h2>
+<p>To detect, verify, and eliminate deepfake content, technical preparedness is essential. Advanced AI-based detection methods, metadata verification, and content provenance systems are all highly recommended in the literature. According to Awodiji et al. (2023), forensic analysis and neural networks can be used to identify subtle differences in modified media.</p>
+<ol class="arabic simple">
+<li><p>Detection techniques - AI-driven audio-visual and metadata forensic techniques are crucial for identifying manipulated content, claim Awodiji et al. (2023) and Tsinganos (2023). These tools must be updated often to stay abreast of emerging attack techniques.</p></li>
+<li><p>Operational Integration - Response delays are reduced, and real-time monitoring and timely alerts are ensured by incorporating detection tools into existing SOC operations (Kshetri &amp; Voas, 2025).</p></li>
+<li><p>Logging &amp; Analysis - Complete and accurate records enable post-event evaluation and timely threat action. The results of Evans et al. (2021), who emphasize that comprehensive documenting strengthens organizational resilience, are supported by this.</p></li>
+<li><p>Coordination Across Teams - Tools cannot operate efficiently without governance and trained personnel, which promotes a balance between technology and human oversight.</p></li>
+</ol>
+<p>The foundation of a proactive defense strategy is an organization’s technical infrastructure, which minimizes operational disturbance and allows for quick detection and remediation.</p>
+</section>
+<section id="chain-of-responsibility-escalation">
+<h2>Chain of Responsibility &amp; Escalation<a class="headerlink" href="#chain-of-responsibility-escalation" title="Link to this heading">#</a></h2>
+<p>Defined roles and escalation procedures are necessary for the efficient handling of AI-based risks. According to research, unclear accountability frequently causes incident response to be delayed, which raises the possibility of damage (Kshetri &amp; Voas, 2025).</p>
+<p>Tsinganos (2023) describes escalation mechanisms with multiple tiers:
+| Tiered Response | SOC analysts find irregularities, bring them to the attention of governance departments, and involve top executives if an incident has regulatory or reputational implications. According to Tsinganos (2023), having distinct layers reduces confusion and response time.|
+| Accountability for Decision-Making | Kshetri &amp; Voas (2025) assert that unclear chains of accountability might result in activities being postponed or executed improperly. By assigning roles for detection, verification, and decision-making, accountability is guaranteed at all levels.|
+| Cross-functional Coordination | The legal, communications, HR, and IT departments working together enhances operational efficiency and compliance with corporate policies (JournalsDG, 2025). |</p>
+<p>This multi-tiered strategy guarantees effective event management, defined roles, and a coordinated organizational response encompassing technological, legal, and human aspects.</p>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -443,6 +463,8 @@ document.write(`
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#risk-assessment-checklist-for-deepfake-social-engineering-threats">Risk Assessment Checklist for Deepfake &amp; Social Engineering Threats</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#governance-model">Governance Model</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tools-infrastructure-readiness">Tools &amp; Infrastructure Readiness</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#chain-of-responsibility-escalation">Chain of Responsibility &amp; Escalation</a></li>
 </ul>
   </nav></div>
 
