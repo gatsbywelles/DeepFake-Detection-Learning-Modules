@@ -55,7 +55,7 @@ Nightingale and Farid (2022) showed that AI-generated faces were rated as more t
 **SIFT Method**<br> 
 Caulfield (2019) developed SIFT (Stop, Investigate the source, Find better coverage, Trace claims). It encourages users to pause and check context instead of reading suspicious content in isolation. <br>
 
-![Lateral Reading](_static/lateral.png)
+![Lateral Reading](_static/lateral.png)<br>
 **Lateral Reading**<br> 
 Wineburg and McGrew (2019) demonstrated that fact-checkers opened new tabs and researched sources, while students stayed trapped on the original page. Teaching lateral reading has shown consistent improvements in credibility judgments.
 
