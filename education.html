@@ -330,6 +330,13 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#psychological-tactics-of-social-engineering">Psychological Tactics of Social Engineering</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-deepfakes-are-created">How DeepFakes Are Created</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#autoencoders">Autoencoders</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#generative-adversarial-networks-gans">Generative Adversarial Networks (GANs)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#practical-pipelines">Practical Pipelines</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#accessibility">Accessibility</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -345,7 +352,28 @@ document.write(`
 <h1>Module 3: Education<a class="headerlink" href="#module-3-education" title="Link to this heading">#</a></h1>
 <section id="psychological-tactics-of-social-engineering">
 <h2>Psychological Tactics of Social Engineering<a class="headerlink" href="#psychological-tactics-of-social-engineering" title="Link to this heading">#</a></h2>
-<iframe width="560" height="315" src="https://youtu.be/3qy-ITKkNxM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></section>
+<iframe width="560" height="315" src="https://youtu.be/KF7caRikqWU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</section>
+<section id="how-deepfakes-are-created">
+<h2>How DeepFakes Are Created<a class="headerlink" href="#how-deepfakes-are-created" title="Link to this heading">#</a></h2>
+<section id="autoencoders">
+<h3>Autoencoders<a class="headerlink" href="#autoencoders" title="Link to this heading">#</a></h3>
+<p>Deepfakes first gained attention using autoencoders. This method uses one shared encoder and separate decoders to map two different faces. After training, the encoder can compress one person’s facial features and the decoder can reconstruct them on another’s face (Chadha et al., 2021). This is how early celebrity face-swap videos were made.</p>
+</section>
+<section id="generative-adversarial-networks-gans">
+<h3>Generative Adversarial Networks (GANs)<a class="headerlink" href="#generative-adversarial-networks-gans" title="Link to this heading">#</a></h3>
+<p>Goodfellow et al. (2014) introduced GANs, which quickly became the gold standard for creating hyper-realistic synthetic media. The generator creates fake images while the discriminator tries to detect them. Through repeated training, the generator improves until its fakes are indistinguishable. Kietzmann et al. (2020) note that GANs now produce full-body avatars and entire fake identities.</p>
+</section>
+<section id="practical-pipelines">
+<h3>Practical Pipelines<a class="headerlink" href="#practical-pipelines" title="Link to this heading">#</a></h3>
+<p>In practice, tools like DeepFaceLab automate the process. Users collect thousands of frames, align and crop them, train models (which can take hours or days), and then blend faces onto target videos (Perov et al., 2020). Wav2Lip improves lip syncing so fake mouths match speech (Kumar et al., 2020). Neural TTS can now clone voices from just a few seconds of audio.</p>
+</section>
+<section id="accessibility">
+<h3>Accessibility<a class="headerlink" href="#accessibility" title="Link to this heading">#</a></h3>
+<p>Nguyen et al. (2022) stress that the barrier to entry is falling. With online tutorials and pre-trained models, even people with little technical skill can create convincing deepfakes. This means political disinformation, scams, and harassment can spread more easily.</p>
+<p>For example, in 2019, criminals used AI-cloned voice to trick a UK energy firm executive into transferring €220,000, believing he was speaking to his boss (Stupp, 2019). This case shows how deepfake creation has already moved from experiments into real-world fraud.</p>
+</section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -413,6 +441,13 @@ document.write(`
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#psychological-tactics-of-social-engineering">Psychological Tactics of Social Engineering</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-deepfakes-are-created">How DeepFakes Are Created</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#autoencoders">Autoencoders</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#generative-adversarial-networks-gans">Generative Adversarial Networks (GANs)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#practical-pipelines">Practical Pipelines</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#accessibility">Accessibility</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 
