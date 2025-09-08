@@ -1,8 +1,7 @@
-# Education
-Education
+# Module 3: Education
 
-Security awareness (phishing, social engineering)
+## Psychological Tactics of Social Engineering
 
-Developer training (secure coding, secrets hygiene)
-
-Role-based training
+<video width="640" height="360" controls>
+      <source src="https://youtu.be/3qy-ITKkNxM" type="video/mp4">
+</video>

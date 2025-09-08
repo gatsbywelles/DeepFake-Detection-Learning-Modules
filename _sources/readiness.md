@@ -72,8 +72,3 @@ Operational readiness in SOCs is necessary to maintain ongoing vigilance against
 4. Continuous Improvement: Playbooks should evolve in harmony with new attack techniques, with a focus on a cycle of detection, reaction, review, and adaptation. 
 
 These protocols ensure that SOCs remain adaptable, strong, and compliant with organisational governance and technical infrastructure. 
-
-## Table Mapping
-| Topic | Insights | Sources |
-|-------|----------|---------|
-|Risk Assessment Checklist for Deepfake/Social Engineering Threats | - Deepfakes pose significant hazards in the areas of national security, fraud, and disinformation. - Combining social engineering with deepfakes allows for the circumvention of conventional trust systems. - Risk assessments should consider psychological manipulation and technological sophistication. | - JournalsDG (2025) https://ojs.journalsdg.org/jlss/article/view/727/1169 - Kshetri & Voas (2025) https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5259359 - Evans et al. (2021) https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10719557/ |
