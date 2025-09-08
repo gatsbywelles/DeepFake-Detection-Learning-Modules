@@ -3,7 +3,7 @@
 ## Psychological Tactics of Social Engineering
 
 %%HTML
-<iframe width="560" height="315" src="https://youtu.be/KF7caRikqWU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://app.animaker.com/animo/3fttY0FMZt7U8Dxw/" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## How DeepFakes Are Created
 
@@ -20,3 +20,20 @@ In practice, tools like DeepFaceLab automate the process. Users collect thousand
 Nguyen et al. (2022) stress that the barrier to entry is falling. With online tutorials and pre-trained models, even people with little technical skill can create convincing deepfakes. This means political disinformation, scams, and harassment can spread more easily. 
 
 For example, in 2019, criminals used AI-cloned voice to trick a UK energy firm executive into transferring €220,000, believing he was speaking to his boss (Stupp, 2019). This case shows how deepfake creation has already moved from experiments into real-world fraud. 
+
+## Common Artifacts and Anomalies
+
+### Physiological Cues
+Li et al. (2018) discovered that early deepfakes blinked abnormally. Humans blink naturally at regular intervals, but fake videos often have long stretches without blinking. Head pose inconsistencies were also noted by Yang et al. (2019), where the face direction didn’t match the body. These are subtle cues but they are still useful for education.
+
+### Audio-Visual Inconsistencies
+Agarwal et al. (2020) found mismatches between phonemes (sounds) and visemes (lip movements). For example, lips shaped for “o” while the sound was “ee.” Humans notice these subconsciously, even if they cannot describe what feels “off.”
+
+### Temporal Flicker and Texture Issues
+Tolosana et al. (2020) describe how skin textures sometimes shimmer or shadows flicker across frames. Even when individual frames look real, across time the inconsistencies become noticeable.
+
+### Physiological Signals in Skin
+Ciftci et al. (2020) measured blood flow signals using skin color changes. Real videos show subtle red-green shifts, while deepfakes often miss them.
+
+### More Trustworthy than Real
+Nightingale and Farid (2022) showed that AI-generated faces were rated as more trustworthy than real faces. This is alarming: if humans not only fail to detect fakes but actually trust them more, then education cannot rely on “spotting tricks” alone. Instead, habits like source verification are essential.
