@@ -44,7 +44,29 @@ Nightingale and Farid (2022) showed that AI-generated faces were rated as more t
 ## Training Activities
 
 + **Spot-the-Fake Exercises** - MIT’s __[“Detect Fakes”](https://detectfakes.kellogg.northwestern.edu/)__ study found that participants improved when given feedback after trying to classify images and videos (Vaccari & Chadwick, 2020). These activities don’t make people perfect detectors but they make them cautious.
-+ **Phishing Email Simulations** - Organizations increasingly run phishing simulations. Dawkins and Jacobs (2021) developed the NIST __[“Phish Scame”](https://nvlpubs.nist.gov/nistpubs/TechnicalNotes/NIST.TN.2276.pdf)__ which helps rate difficulty of phishing messages. This way, companies can start with obvious fakes and gradually increase realism.
++ **Phishing Email Simulations** - Organizations increasingly run phishing simulations. Dawkins and Jacobs (2021) developed the NIST __[“Phish Scam”](https://nvlpubs.nist.gov/nistpubs/TechnicalNotes/NIST.TN.2276.pdf)__ which helps rate difficulty of phishing messages. This way, companies can start with obvious fakes and gradually increase realism.
 + **Prebunking Games** - Roozenbeek and van der Linden (2019) created the __[“Bad News game”](https://www.getbadnews.com/en)__ game, where players take the role of a fake news creator. By learning the tactics, they build immunity. Harmony Square, another game, applies similar logic to political manipulation. Studies show prebunking builds durable resistance.
 + **Reflection Prompts** - Bada et al. (2019) argue that reflection is crucial. After exercises, employees should consider what they noticed and what they missed. Reflection cements learning better than rote training.
 + **Case Example** - Google and Jigsaw launched prebunking YouTube ads in 2022 across Eastern Europe to combat disinformation about refugees. Early results showed reduced susceptibility to manipulation even weeks later (Roozenbeek et al., 2022). This proves training can scale beyond classrooms.
+
+## Media Literacy Studies 
+
+![SIFT Method](_static/sift.png)
+**SIFT Method**<br> 
+Caulfield (2019) developed SIFT (Stop, Investigate the source, Find better coverage, Trace claims). It encourages users to pause and check context instead of reading suspicious content in isolation. <br>
+
+![Lateral Reading](_static/lateral.png)
+**Lateral Reading**<br> 
+Wineburg and McGrew (2019) demonstrated that fact-checkers opened new tabs and researched sources, while students stayed trapped on the original page. Teaching lateral reading has shown consistent improvements in credibility judgments.
+
+![Population Studies](_static/population.jpg)
+**Population Studies**<br> 
+McGrew et al. (2018) found that most high school students struggled with online reasoning tasks. Many couldn’t tell the difference between news and sponsored content. This suggests that media literacy must be part of curricula, not optional.
+
+![Inoculation Effects](_static/misinfo.jpg)
+**Inoculation Effects**<br> 
+McGrew et al. (2018) found that most high school students struggled with online reasoning tasks. Many couldn’t tell the difference between news and sponsored content. This suggests that media literacy must be part of curricula, not optional.
+
+
+
+
