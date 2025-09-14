@@ -68,5 +68,16 @@ McGrew et al. (2018) found that most high school students struggled with online 
 McGrew et al. (2018) found that most high school students struggled with online reasoning tasks. Many couldn’t tell the difference between news and sponsored content. This suggests that media literacy must be part of curricula, not optional.
 
 
+## Existing Awareness Programs
 
+1. Traditional CBTs - Parsons et al. (2017) noted that many organizations still rely on annual computer-based training. These are often treated as compliance exercises and rarely change behavior. 
+2. Embedded Phishing Exercises - Canfield et al. (2016) found that simulated phishing with immediate feedback was far more effective. Employees learned from mistakes faster. 
+3. NIST Guidance - NIST SP 800-50 (2003) emphasizes continuous awareness, tailored to roles. For example, finance staff should receive phishing awareness on invoice fraud, while IT staff may need training on credential harvesting. 
+4. Measuring Success - Jampen et al. (2020) recommend measuring not just click rates but also reporting behavior. A workplace where employees frequently report suspicious emails is more resilient than one with low reporting but low clicks. 
+5. Case Example - Capital One’s 2019 breach occurred due to a misconfigured firewall, but phishing simulations afterward improved employee reporting by 60% (Caponi, 2020). This shows training can adapt even after incidents.
 
+Education remains the most sustainable defense against social engineering and deepfakes. The psychological triggers of urgency, authority, and fear explain why technical defenses alone are not enough. Deepfake creation has evolved from autoencoders to GANs and voice-cloning, making manipulation more realistic. Yet deepfakes still leave traces like mismatched lip movements, abnormal blinking, and skin inconsistencies. 
+
+Hands-on training, whether spot-the-fake games, phishing simulations, or prebunking activities, helps learners develop skepticism. Media literacy skills like SIFT and lateral reading give people processes for verification, while inoculation strategies build resilience over time. Awareness programs succeed when they are continuous, role-specific, and measured by meaningful metrics like reporting. 
+
+In the end, no training makes humans perfect detectors, but education helps them pause, doubt, and verify. That habit is the most powerful defense against manipulation in the digital age
