@@ -332,7 +332,8 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#deepfake-detection-technologies-and-classifiers">Deepfake Detection Technologies and Classifiers</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#spatial-artifacts-single-frame-clues">Spatial Artifacts (Single-Frame Clues)</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#undirected-approaches">Undirected Approaches</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#metadata-analysis">Metadata analysis</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#metadata-analysis">Metadata Analysis</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#content-fingerprinting">Content Fingerprinting</a></li>
 </ul>
 </li>
 </ul>
@@ -382,7 +383,7 @@ Anomaly detection systems are trained on real data, then identify fakes by spott
 </ul>
 </section>
 <section id="metadata-analysis">
-<h3>Metadata analysis<a class="headerlink" href="#metadata-analysis" title="Link to this heading">#</a></h3>
+<h3>Metadata Analysis<a class="headerlink" href="#metadata-analysis" title="Link to this heading">#</a></h3>
 <p>Metadata refers to the hidden information stored inside a digital file. For images and videos, metadata can include details such as file size, creation date, last modified date, and even the camera model used. Examining these properties is an important step in digital forensics because irregularities in metadata may indicate tampering or manipulation. For example, if an image claims to be taken years ago but the “creation date” in its metadata is recent, this raises suspicion. Metadata analysis therefore acts as an additional layer of verification when investigating possible deepfakes.</p>
 <p>Researchers have also developed frameworks for metadata forensics to systematize this process (Royan et al., 2024). In practice, the process begins with preprocessing images so they are standardized. This step ensures that variations such as rotated or resized images do not interfere with analysis. Once standardized, metadata is extracted using specialized tools and then processed by machine learning algorithms to detect unusual patterns or generate a report.</p>
 <p><strong>Tools commonly used (Royan et al., 2024):</strong></p>
@@ -390,6 +391,21 @@ Anomaly detection systems are trained on real data, then identify fakes by spott
 <li><p>ExifTool – extracts image attributes such as file size, creation and modification dates, and camera information.</p></li>
 <li><p>Online and offline analyzers – in the study, 10 online and 5 offline tools were tested to check and interpret metadata for signs of manipulation.</p></li>
 </ol>
+</section>
+<section id="content-fingerprinting">
+<h3>Content Fingerprinting<a class="headerlink" href="#content-fingerprinting" title="Link to this heading">#</a></h3>
+<p>Content fingerprinting—often implemented via perceptual hashing—derives a compact, unique identifier directly from the digital signal. Rather than matching exact bytes, a perceptual-hash–based fingerprint encodes modality-specific features of the content so that near-duplicates map to nearby binary codes while unrelated items remain far apart (Chen et al., 2024).</p>
+<ul class="simple">
+<li><p><strong>Text</strong> <br>
+For text media, the pipeline tokenizes the document into small chunks, ranks or selects salient segments, and aggregates these into a fixed-length fingerprint; subsequent comparisons test the query fingerprint against a reference set to assess authenticity or similarity (Chen et al., 2024).</p></li>
+<li><p><strong>Images</strong> <br>
+Image fingerprinting first analyzes discriminative visual features and then encodes them into a binary hash. Zhao and Yuan (2020) propose a scheme that integrates 3D color structure with brightness variation, yielding faster computation and a shorter hash length while maintaining strong identification performance for authenticity checks.</p></li>
+<li><p><strong>Video</strong> <br>
+Video fingerprints compress cues from color, texture, and motion into a compact binary hash that summarizes temporal dynamics as well as per-frame appearance, enabling efficient large-scale matching and tamper detection (Chen et al., 2024).</p></li>
+<li><p><strong>Audio</strong> <br>
+Audio fingerprints capture unique spectral–temporal patterns. One approach extracts both spectral and temporal features to build a detection-oriented hash (Kaushal Kishor et al., 2023). Another focuses on peak picking in the Mel-spectrogram, which improves robustness to background noise and operates on a 2D time–frequency representation independent of absolute amplitude (Gupta et al., 2021).</p></li>
+</ul>
+<p>Across modalities, perceptual-hash fingerprints provide compact, comparable representations derived from the content itself. Designs trade off speed, hash length, and discriminability, but all follow the same principle: extract stable features, encode them into a binary identifier, and compare those identifiers to verify authenticity or detect near-duplicates (Chen et al., 2024; Zhao &amp; Yuan, 2020; Kaushal Kishor et al., 2023; Gupta et al., 2021).</p>
 </section>
 </section>
 </section>
@@ -461,7 +477,8 @@ Anomaly detection systems are trained on real data, then identify fakes by spott
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#deepfake-detection-technologies-and-classifiers">Deepfake Detection Technologies and Classifiers</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#spatial-artifacts-single-frame-clues">Spatial Artifacts (Single-Frame Clues)</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#undirected-approaches">Undirected Approaches</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#metadata-analysis">Metadata analysis</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#metadata-analysis">Metadata Analysis</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#content-fingerprinting">Content Fingerprinting</a></li>
 </ul>
 </li>
 </ul>
