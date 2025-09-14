@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Detection &#8212; DeepFake Training Modules</title>
+    <title>Module 4: Detection &#8212; DeepFake Training Modules</title>
   
   
   
@@ -175,7 +175,7 @@
 <li class="toctree-l1"><a class="reference internal" href="policies.html">Module 1: Policies</a></li>
 <li class="toctree-l1"><a class="reference internal" href="readiness.html">Module 2: Readiness</a></li>
 <li class="toctree-l1"><a class="reference internal" href="education.html">Module 3: Education</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Detection</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Module 4: Detection</a></li>
 <li class="toctree-l1"><a class="reference internal" href="response.html">Response</a></li>
 <li class="toctree-l1"><a class="reference internal" href="improvements.html">Improvements</a></li>
 <li class="toctree-l1"><a class="reference internal" href="knowledge-check.html">Knowledge check</a></li>
@@ -306,7 +306,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -317,11 +319,24 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Detection</h1>
+    <h1>Module 4: Detection</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#deepfake-detection-technologies-and-classifiers">Deepfake Detection Technologies and Classifiers</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#spatial-artifacts-single-frame-clues">Spatial Artifacts (Single-Frame Clues)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#undirected-approaches">Undirected Approaches</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#metadata-analysis">Metadata analysis</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -331,13 +346,52 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="detection">
-<h1>Detection<a class="headerlink" href="#detection" title="Link to this heading">#</a></h1>
-<p>Detection</p>
-<p>Logging &amp; telemetry</p>
-<p>SIEM rules</p>
-<p>EDR coverage</p>
-<p>Alert triage workflow</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="module-4-detection">
+<h1>Module 4: Detection<a class="headerlink" href="#module-4-detection" title="Link to this heading">#</a></h1>
+<section id="deepfake-detection-technologies-and-classifiers">
+<h2>Deepfake Detection Technologies and Classifiers<a class="headerlink" href="#deepfake-detection-technologies-and-classifiers" title="Link to this heading">#</a></h2>
+<p>Deepfakes can be very convincing, and sometimes the human eye alone cannot detect them. Researchers use machine learning and forensic techniques to identify hidden clues known as artifacts. These artifacts are divided into two groups: spatial artifacts (visible in a single frame, such as an image) and temporal artifacts (visible across multiple frames, such as a video). There are also more general approaches that do not rely on specific artifacts.</p>
+<section id="spatial-artifacts-single-frame-clues">
+<h3>Spatial Artifacts (Single-Frame Clues)<a class="headerlink" href="#spatial-artifacts-single-frame-clues" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Behavior</strong> <br>
+Deepfakes sometimes fail to capture natural personality traits. By analyzing the emotions expressed in both audio and video, systems can compare them to real footage of the target.</p></li>
+<li><p><strong>Physiology</strong> <br>
+Synthetic videos often lack real biological signals. For example, blinking patterns may look unnatural or skin may not show a realistic pulse. These signs can be used to detect fake content.</p></li>
+<li><p><strong>Synchronization</strong> <br>
+Speech and mouth movements must match. Deepfakes often fail to generate correct mouth shapes for certain sounds such as B, P, and M, creating mismatches between audio and video.</p></li>
+<li><p><strong>Coherence</strong> <br>
+Real videos are usually smooth and consistent. In contrast, some deepfakes flicker or jitter between frames. Models like LSTMs can track face movements frame by frame and detect when the predicted sequence does not match natural behavior.</p></li>
+</ul>
+</section>
+<section id="undirected-approaches">
+<h3>Undirected Approaches<a class="headerlink" href="#undirected-approaches" title="Link to this heading">#</a></h3>
+<p>These methods do not target specific artifacts. Instead, they use deep neural networks as general classifiers to learn features that separate real content from fake.</p>
+<ul class="simple">
+<li><p><strong>Classification</strong> <br>
+Traditional forensic tools often struggle with compressed images, but CNN-based models perform better. Some advanced approaches include:</p>
+<ul>
+<li><p>Hierarchical Memory Networks (HMN): These analyze faces over multiple steps, storing past encodings and using memory to improve predictions.</p></li>
+<li><p>Ensemble Models: Multiple deepfake detectors can be combined, and their outputs passed into a meta-classifier, producing stronger results than a single model.</p></li>
+<li><p>3D CNNs (spatio-temporal networks): These analyze multiple frames at once, making them well-suited for video detection.
+The drawback of classification methods is that they can sometimes be fooled by adversarial attacks designed to bypass detection.</p></li>
+</ul>
+</li>
+<li><p><strong>Anomaly Detection</strong> <br>
+Anomaly detection systems are trained on real data, then identify fakes by spotting outliers. These methods can even detect deepfakes created with new techniques that were not part of the training data. For example, they may measure the coverage of a face recognition network to detect when patterns in a video fall outside the range of natural signals.</p></li>
+</ul>
+</section>
+<section id="metadata-analysis">
+<h3>Metadata analysis<a class="headerlink" href="#metadata-analysis" title="Link to this heading">#</a></h3>
+<p>Metadata refers to the hidden information stored inside a digital file. For images and videos, metadata can include details such as file size, creation date, last modified date, and even the camera model used. Examining these properties is an important step in digital forensics because irregularities in metadata may indicate tampering or manipulation. For example, if an image claims to be taken years ago but the “creation date” in its metadata is recent, this raises suspicion. Metadata analysis therefore acts as an additional layer of verification when investigating possible deepfakes.</p>
+<p>Researchers have also developed frameworks for metadata forensics to systematize this process (Royan et al., 2024). In practice, the process begins with preprocessing images so they are standardized. This step ensures that variations such as rotated or resized images do not interfere with analysis. Once standardized, metadata is extracted using specialized tools and then processed by machine learning algorithms to detect unusual patterns or generate a report.</p>
+<p><strong>Tools commonly used (Royan et al., 2024):</strong></p>
+<ol class="arabic simple">
+<li><p>ExifTool – extracts image attributes such as file size, creation and modification dates, and camera information.</p></li>
+<li><p>Online and offline analyzers – in the study, 10 online and 5 offline tools were tested to check and interpret metadata for signs of manipulation.</p></li>
+</ol>
+</section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -394,6 +448,26 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#deepfake-detection-technologies-and-classifiers">Deepfake Detection Technologies and Classifiers</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#spatial-artifacts-single-frame-clues">Spatial Artifacts (Single-Frame Clues)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#undirected-approaches">Undirected Approaches</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#metadata-analysis">Metadata analysis</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
