@@ -337,10 +337,11 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vendor-vs-open-source-tools-pros-cons">Vendor vs. Open-source Tools (pros/cons)</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#vender-tools">Vender Tools</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#vendor-tools">Vendor Tools</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#open-source">Open Source</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#soc-playbooks-for-escalating-suspicious-media">SOC Playbooks for Escalating Suspicious Media</a></li>
 </ul>
             </nav>
         </div>
@@ -415,8 +416,8 @@ Audio fingerprints capture unique spectral–temporal patterns. One approach ext
 </section>
 <section id="vendor-vs-open-source-tools-pros-cons">
 <h2>Vendor vs. Open-source Tools (pros/cons)<a class="headerlink" href="#vendor-vs-open-source-tools-pros-cons" title="Link to this heading">#</a></h2>
-<section id="vender-tools">
-<h3>Vender Tools<a class="headerlink" href="#vender-tools" title="Link to this heading">#</a></h3>
+<section id="vendor-tools">
+<h3>Vendor Tools<a class="headerlink" href="#vendor-tools" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p><strong>Sensity AI</strong> <br>
 Pros – high level of detection (90%+), has multi model detection (video, audio, images), real time monitoring, forensic level reporting, API integration for enterprise (Top Deepfake Detection Tools, 2025).
@@ -459,6 +460,77 @@ Cons- slow speed, requires tech expertise, low scalability (Mukta et al., 2023)<
 </table>
 </div>
 </section>
+</section>
+<section id="soc-playbooks-for-escalating-suspicious-media">
+<h2>SOC Playbooks for Escalating Suspicious Media<a class="headerlink" href="#soc-playbooks-for-escalating-suspicious-media" title="Link to this heading">#</a></h2>
+<p>A playbook guide can be made up using OWASP guide for preparing and responding to deepfake events, building trust in a deepfake era an article by grow public relations and another article from reality defender about creating standard operating procedures for deepfake incident response.</p>
+<ol class="arabic simple">
+<li><p>Monitoring &amp; alerting - Use real time detecting tools (Creating Standard Operating Procedures for Deepfake Incident Response, 2025). Should alert with altered versions for each section of the business.</p></li>
+<li><p>Analyzing, scoring the alert and informing the relevant parties - Cross check with databases the blockchains, hashes, watermarks and metadata if this is a valid threat.  Next, they should categorize which kind of level this threat is. After that, the Cyber security team should review the threat if they more analysis they should inform the forensic analysis team for a deeper dive. Lastly, they contact the legal team, public relations, directors if it’s a major financial or reputational hit</p></li>
+<li><p>Response - If there is identified sectors to be isolated it should be quarantined. Maintain a log of every step for the final stage meeting. Communicate with the business about the incident and precautionary steps.</p></li>
+<li><p>Review - Update the required polices and the playbook to improve incident response performance. Current state of deepfake detection research. The table below is from an article called analysis of the current state of deepfake techniques creation and detection methods. <br></p></li>
+</ol>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Reference</p></th>
+<th class="head"><p>Method</p></th>
+<th class="head"><p>Year</p></th>
+<th class="head"><p>Advantage</p></th>
+<th class="head"><p>Performance Evaluation Accuracy (%)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Chang et al.</p></td>
+<td><p>Convolutional neural network</p></td>
+<td><p>2020</p></td>
+<td><p>NA-VGG improved the detection of deepfake face images and the accuracy of this method. is much higher than several deepfake detection models.</p></td>
+<td><p>85.70%</p></td>
+</tr>
+<tr class="row-odd"><td><p>Zhou et al.</p></td>
+<td><p>Neural networks</p></td>
+<td><p>It can detect tampering artifacts as well as hidden noise residual features. This method outperforms each stream by a large margin.</p></td>
+<td><p>92.70%</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>Wodajo and Atnafu.</p></td>
+<td><p>Convolutional vision transformer</p></td>
+<td><p>2021</p></td>
+<td><p>This method’s ability to detect deepfake, and quickly determine if the images are real or not.</p></td>
+<td><p>91.50%</p></td>
+</tr>
+<tr class="row-odd"><td><p>Shad et al.</p></td>
+<td><p>Convolutional neural network</p></td>
+<td><p>2021</p></td>
+<td><p>Detect deepfake images with high accuracy. Accuracy, precision, F1-score, and area under the ROC curve were all highest for VGGFace.</p></td>
+<td><p>99%</p></td>
+</tr>
+<tr class="row-even"><td><p>Ismail et al.</p></td>
+<td><p>XGBoost</p></td>
+<td><p>2021</p></td>
+<td><p>The XGBoost algorithm uses more precise approximations to find the optimal tree model. It’s designed to be adaptable and quick. It presents a fast and precise parallel tree boosting that solves many data science problems.</p></td>
+<td><p>90.73%</p></td>
+</tr>
+<tr class="row-odd"><td><p>Ahmed et al.</p></td>
+<td><p>Rationale augmented convolutional neural network</p></td>
+<td><p>2021</p></td>
+<td><p>In a real-time environment, models that have better performance and are smaller in size will be more useful.</p></td>
+<td><p>95.77%</p></td>
+</tr>
+<tr class="row-even"><td><p>Liu et al.</p></td>
+<td><p>3D convolutional neural network</p></td>
+<td><p>2021</p></td>
+<td><p>The proposed network has fewer parameters than other networks. As well as reduces deployment consumption while maintaining detection performance.</p></td>
+<td><p>99.83%</p></td>
+</tr>
+<tr class="row-odd"><td><p>Kolagati at el.</p></td>
+<td><p>Deep multilayer Convolutional Neural Network</p></td>
+<td><p>2022</p></td>
+<td><p>The hybrid system is ideal for screening deepfake videos with high speed and low computational resources.</p></td>
+<td><p>84%</p></td>
+</tr>
+</tbody>
+</table>
+</div>
 </section>
 </section>
 
@@ -534,10 +606,11 @@ Cons- slow speed, requires tech expertise, low scalability (Mukta et al., 2023)<
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vendor-vs-open-source-tools-pros-cons">Vendor vs. Open-source Tools (pros/cons)</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#vender-tools">Vender Tools</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#vendor-tools">Vendor Tools</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#open-source">Open Source</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#soc-playbooks-for-escalating-suspicious-media">SOC Playbooks for Escalating Suspicious Media</a></li>
 </ul>
   </nav></div>
 

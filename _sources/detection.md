@@ -63,7 +63,7 @@ Across modalities, perceptual-hash fingerprints provide compact, comparable repr
 
 ## Vendor vs. Open-source Tools (pros/cons)
 
-### Vender Tools 
+### Vendor Tools 
 
 + **Sensity AI** <br>
 Pros – high level of detection (90%+), has multi model detection (video, audio, images), real time monitoring, forensic level reporting, API integration for enterprise (Top Deepfake Detection Tools, 2025). 
@@ -92,3 +92,22 @@ Cons- slow speed, requires tech expertise, low scalability (Mukta et al., 2023)
 |-----------|------|------|
 |Vendor|Higher accuracy detection, real time monitoring and forensic level reporting |Expensive for entry level business, needs a specific tech to run |
 |Open source |Free to use, transparent and flexible algorithms |Slower processing speeds, needs a level of technical knowledge to use, low scalability and community driven user support |
+
+## SOC Playbooks for Escalating Suspicious Media 
+A playbook guide can be made up using OWASP guide for preparing and responding to deepfake events, building trust in a deepfake era an article by grow public relations and another article from reality defender about creating standard operating procedures for deepfake incident response.  
+
+1. Monitoring & alerting - Use real time detecting tools (Creating Standard Operating Procedures for Deepfake Incident Response, 2025). Should alert with altered versions for each section of the business. 
+2. Analyzing, scoring the alert and informing the relevant parties - Cross check with databases the blockchains, hashes, watermarks and metadata if this is a valid threat.  Next, they should categorize which kind of level this threat is. After that, the Cyber security team should review the threat if they more analysis they should inform the forensic analysis team for a deeper dive. Lastly, they contact the legal team, public relations, directors if it’s a major financial or reputational hit  
+3. Response - If there is identified sectors to be isolated it should be quarantined. Maintain a log of every step for the final stage meeting. Communicate with the business about the incident and precautionary steps. 
+4. Review - Update the required polices and the playbook to improve incident response performance. Current state of deepfake detection research. The table below is from an article called analysis of the current state of deepfake techniques creation and detection methods. <br>
+
+| Reference | Method | Year | Advantage | Performance Evaluation Accuracy (%) |
+|-----------|--------|------|-----------|-------------------------------------|
+|Chang et al. |Convolutional neural network | 2020 | NA-VGG improved the detection of deepfake face images and the accuracy of this method. is much higher than several deepfake detection models. | 85.70% |
+|Zhou et al. |Neural networks | It can detect tampering artifacts as well as hidden noise residual features. This method outperforms each stream by a large margin. | 92.70% |
+|Wodajo and Atnafu.| Convolutional vision transformer | 2021 | This method's ability to detect deepfake, and quickly determine if the images are real or not. | 91.50% |
+|Shad et al. | Convolutional neural network | 2021 | Detect deepfake images with high accuracy. Accuracy, precision, F1-score, and area under the ROC curve were all highest for VGGFace. | 99% |
+|Ismail et al. | XGBoost | 2021 | The XGBoost algorithm uses more precise approximations to find the optimal tree model. It's designed to be adaptable and quick. It presents a fast and precise parallel tree boosting that solves many data science problems. | 90.73% |
+|Ahmed et al. | Rationale augmented convolutional neural network | 2021 | In a real-time environment, models that have better performance and are smaller in size will be more useful. | 95.77% |
+|Liu et al. | 3D convolutional neural network | 2021 | The proposed network has fewer parameters than other networks. As well as reduces deployment consumption while maintaining detection performance. | 99.83% |
+|Kolagati at el. |Deep multilayer Convolutional Neural Network | 2022 | The hybrid system is ideal for screening deepfake videos with high speed and low computational resources. | 84% | 
