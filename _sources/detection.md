@@ -60,3 +60,35 @@ Video fingerprints compress cues from color, texture, and motion into a compact 
 Audio fingerprints capture unique spectral–temporal patterns. One approach extracts both spectral and temporal features to build a detection-oriented hash (Kaushal Kishor et al., 2023). Another focuses on peak picking in the Mel-spectrogram, which improves robustness to background noise and operates on a 2D time–frequency representation independent of absolute amplitude (Gupta et al., 2021).
 
 Across modalities, perceptual-hash fingerprints provide compact, comparable representations derived from the content itself. Designs trade off speed, hash length, and discriminability, but all follow the same principle: extract stable features, encode them into a binary identifier, and compare those identifiers to verify authenticity or detect near-duplicates (Chen et al., 2024; Zhao & Yuan, 2020; Kaushal Kishor et al., 2023; Gupta et al., 2021).
+
+## Vendor vs. Open-source Tools (pros/cons)
+
+### Vender Tools 
+
++ **Sensity AI** <br>
+Pros – high level of detection (90%+), has multi model detection (video, audio, images), real time monitoring, forensic level reporting, API integration for enterprise (Top Deepfake Detection Tools, 2025). 
+Cons – requires specific technical implications to work (Top Deepfake Detection Tools, 2025). 
+
++ **Reality Defender** <br>
+Pros – business friendly (setups and dashboard), multi format detection (video, images, audio, text), process in batches, integrated with content management systems (Top Deepfake Detection Tools, 2025).
+Cons – costly for smaller organizations (Top Deepfake Detection Tools, 2025) 
+
++ **Resemble AI Detect** <br>
+Pros- audio focused detection, High accuracy (90%), approaches the API 1st (Top Deepfake Detection Tools, 2025) 
+Cons- only audio detection (Top Deepfake Detection Tools, 2025  
+
+### Open Source  
+
++ **DeepFake-o-meter** <br>
+Pros - uses API runs on remote machine, metadata forensics can analyze multiple algorithms on the same input (DeepFake-o-Meter, 2021). 
+
++ **FaceForensics++** <br> 
+Pros – high detection accuracy (Mukta et al., 2023) 
+Cons- slow speed, requires tech expertise, low scalability (Mukta et al., 2023)
+
+<br>
+
+| Tool Type | Pros | Cons |
+|-----------|------|------|
+|Vendor|Higher accuracy detection, real time monitoring and forensic level reporting |Expensive for entry level business, needs a specific tech to run |
+|Open source |Free to use, transparent and flexible algorithms |Slower processing speeds, needs a level of technical knowledge to use, low scalability and community driven user support |
