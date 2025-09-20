@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Response &#8212; DeepFake Training Modules</title>
+    <title>Module 5: Response &#8212; DeepFake Training Modules</title>
   
   
   
@@ -176,7 +176,7 @@
 <li class="toctree-l1"><a class="reference internal" href="readiness.html">Module 2: Readiness</a></li>
 <li class="toctree-l1"><a class="reference internal" href="education.html">Module 3: Education</a></li>
 <li class="toctree-l1"><a class="reference internal" href="detection.html">Module 4: Detection</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Response</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Module 5: Response</a></li>
 <li class="toctree-l1"><a class="reference internal" href="improvements.html">Improvements</a></li>
 <li class="toctree-l1"><a class="reference internal" href="knowledge-check.html">Knowledge check</a></li>
 <li class="toctree-l1"><a class="reference internal" href="resources.html">Resources</a></li>
@@ -306,7 +306,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -317,11 +319,28 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Response</h1>
+    <h1>Module 5: Response</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">Introduction</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#understanding-deepfake-threats">Understanding Deepfake Threats</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#evolution-of-incident-response">Evolution of Incident Response</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#deepfake-specific-response-workflow">Deepfake-Specific Response Workflow</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#forensic-validation-techniques">Forensic Validation Techniques</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#legal-and-escalation-protocols">Legal and Escalation Protocols</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#communication-protocols">Communication Protocols</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#applying-nist-sp-800-61-to-deepfakes">Applying NIST SP 800-61 to Deepfakes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#critical-evaluation-and-future-direction">Critical Evaluation and Future Direction</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lessons-learned">Lessons Learned</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -331,13 +350,87 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="response">
-<h1>Response<a class="headerlink" href="#response" title="Link to this heading">#</a></h1>
-<p>Response</p>
-<p>Incident Command System (ICS)</p>
-<p>Communication templates</p>
-<p>Forensics &amp; evidence handling</p>
-<p>Legal &amp; regulatory notifications</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="module-5-response">
+<h1>Module 5: Response<a class="headerlink" href="#module-5-response" title="Link to this heading">#</a></h1>
+<section id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Link to this heading">#</a></h2>
+<p>Deepfakes represent a new frontier in cybersecurity, where deception targets human perception rather than system vulnerabilities. Unlike traditional threats such as malware or phishing, deepfakes blur the line between truth and fiction, requiring organisations to rethink how they detect, respond to, and communicate about incidents. This module explores the evolution of incident response frameworks and introduces a structured approach tailored to deepfake threats.</p>
+<p><strong>Learning Objectives</strong>
+By the end of this module, learners will be able to:</p>
+<ul class="simple">
+<li><p>Explain how deepfakes differ from traditional cyber threats.</p></li>
+<li><p>Describe the evolution of incident response from malware to deepfakes.</p></li>
+<li><p>Apply a structured workflow for deepfake incident response.</p></li>
+<li><p>Identify forensic and legal tools used in deepfake validation.</p></li>
+<li><p>Analyse real-world deepfake incidents and evaluate response effectiveness.</p></li>
+<li><p>Discuss strengths, gaps, and future directions in deepfake response frameworks</p></li>
+</ul>
+</section>
+<section id="understanding-deepfake-threats">
+<h2>Understanding Deepfake Threats<a class="headerlink" href="#understanding-deepfake-threats" title="Link to this heading">#</a></h2>
+<p>Deepfakes combine technical deception with psychological manipulation, targeting human perception rather than system vulnerabilities. This places them in a grey zone of misinformation, where truth and fiction blur (Chesney &amp; Citron, 2019). Traditional IT responses are insufficient—organisations must integrate forensic analysis, escalation protocols, and strategic communication.</p>
+</section>
+<section id="evolution-of-incident-response">
+<h2>Evolution of Incident Response<a class="headerlink" href="#evolution-of-incident-response" title="Link to this heading">#</a></h2>
+<p>Incident response frameworks originated in the 1980s to combat viruses and system breaches. Over time, they evolved to include containment, patching, forensic investigation, and stakeholder communication. Deepfakes challenge these frameworks by introducing threats that are realistic, reputational, and cross-disciplinary. Addressing them requires collaboration between cybersecurity teams, legal experts, media advisors, and public relations professionals.</p>
+</section>
+<section id="deepfake-specific-response-workflow">
+<h2>Deepfake-Specific Response Workflow<a class="headerlink" href="#deepfake-specific-response-workflow" title="Link to this heading">#</a></h2>
+<p>A tailored workflow is essential for managing deepfake incidents:</p>
+<ul class="simple">
+<li><p>Quarantine: Suspicious media should be isolated immediately. This includes removing content from internal platforms, disabling links, and blocking sharing capabilities (OWASP, 2024).</p></li>
+<li><p>Validation: AI-based detection tools and human review are used to confirm authenticity (Reality Defender, 2023).</p></li>
+<li><p>Alerting: Confirmed threats are escalated via automated SOC notifications and incident response channels (Shu et al., 2022).</p></li>
+</ul>
+</section>
+<section id="forensic-validation-techniques">
+<h2>Forensic Validation Techniques<a class="headerlink" href="#forensic-validation-techniques" title="Link to this heading">#</a></h2>
+<p>Deepfake validation involves multiple layers of analysis:</p>
+<ul class="simple">
+<li><p>Digital Media Analysis: Tools like XceptionNet and Wav2Vec detect anomalies in lighting, blinking, and lip synchronisation (Nguyen et al., 2019).</p></li>
+<li><p>Metadata Examination: Timestamps and device identifiers offer clues, though they can be forged (NIST, 2012).</p></li>
+<li><p>Cross-Verification: Comparing content with official statements and contacting individuals depicted in the media helps confirm authenticity. C2PA metadata standards support this process (C2PA, 2022).</p></li>
+</ul>
+</section>
+<section id="legal-and-escalation-protocols">
+<h2>Legal and Escalation Protocols<a class="headerlink" href="#legal-and-escalation-protocols" title="Link to this heading">#</a></h2>
+<p>Legal response begins with documentation of forensic procedures to ensure admissibility and compliance with regulations such as GDPR. Escalation may involve freezing suspicious transactions (Forbes, 2019), revoking compromised credentials (Wired, 2020), and issuing advisories to internal and external stakeholders (CISA, 2023). Coordination with banks, insurers, and law enforcement is essential.</p>
+</section>
+<section id="communication-protocols">
+<h2>Communication Protocols<a class="headerlink" href="#communication-protocols" title="Link to this heading">#</a></h2>
+<p>Communication is critical during a deepfake incident:</p>
+<ul class="simple">
+<li><p>Internal: Secure channels and structured incident response plans help inform staff (CISA, 2021).</p></li>
+<li><p>External: Transparency must be balanced with reputational risk. PR teams craft messaging that is consistent and legally sound (DOJ, 2020).
+All communications should be logged for accountability and future training.</p></li>
+</ul>
+</section>
+<section id="applying-nist-sp-800-61-to-deepfakes">
+<h2>Applying NIST SP 800-61 to Deepfakes<a class="headerlink" href="#applying-nist-sp-800-61-to-deepfakes" title="Link to this heading">#</a></h2>
+<p>The NIST SP 800-61 framework can be adapted to deepfake incidents:</p>
+<ol class="arabic simple">
+<li><p><strong>Preparation:</strong> Develop playbooks and train staff.</p></li>
+<li><p><strong>Detection:</strong> Use AI tools and human oversight.</p></li>
+<li><p><strong>Containment:</strong> Isolate malicious media.</p></li>
+<li><p><strong>Eradication:</strong> Halt fraudulent activity and revoke access.</p></li>
+<li><p><strong>Recovery:</strong> Restore operations and issue advisories.</p></li>
+<li><p><strong>Post-Incident:</strong> Conduct reviews and improve protocols (NIST, 2012; Shu et al., 2022).</p></li>
+</ol>
+</section>
+<section id="critical-evaluation-and-future-direction">
+<h2>Critical Evaluation and Future Direction<a class="headerlink" href="#critical-evaluation-and-future-direction" title="Link to this heading">#</a></h2>
+<p>Current frameworks offer adaptability and cross-verification mechanisms that reduce false positives. Escalation protocols help limit financial and reputational damage. However, advanced deepfakes may bypass forensic tools, and metadata can be stripped or altered. Reputation-focused communication may also hinder transparency.</p>
+<p>To strengthen deepfake response capabilities, organisations should:</p>
+<ul class="simple">
+<li><p>Adopt C2PA standards across platforms.</p></li>
+<li><p>Develop real-time detection tools for live media.</p></li>
+<li><p>Foster collaboration across sectors.</p></li>
+</ul>
+</section>
+<section id="lessons-learned">
+<h2>Lessons Learned<a class="headerlink" href="#lessons-learned" title="Link to this heading">#</a></h2>
+<p>Responding to deepfake incidents requires a multi-disciplinary approach that prioritises speed, transparency, and credibility. Pre-tested escalation protocols, provenance standards, and cross-sector collaboration are essential. Organisations must move beyond technical perfection and embrace holistic strategies that address both the technological and human dimensions of deepfake threats.</p>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -394,6 +487,30 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">Introduction</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#understanding-deepfake-threats">Understanding Deepfake Threats</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#evolution-of-incident-response">Evolution of Incident Response</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#deepfake-specific-response-workflow">Deepfake-Specific Response Workflow</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#forensic-validation-techniques">Forensic Validation Techniques</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#legal-and-escalation-protocols">Legal and Escalation Protocols</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#communication-protocols">Communication Protocols</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#applying-nist-sp-800-61-to-deepfakes">Applying NIST SP 800-61 to Deepfakes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#critical-evaluation-and-future-direction">Critical Evaluation and Future Direction</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lessons-learned">Lessons Learned</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
